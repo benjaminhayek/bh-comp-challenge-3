@@ -1,202 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>Static Comp 3</title>
 </head>
 <body>
-  <section class="container">
-    <section class="left-sidebar">
-      <article>
-        <img src="">
-        <h3>Name</h3>
+  <section class="sidebar" role="sidebar">
+    <article class="sidebar-top">
+      <img alt="image of user" class="sidebar-image" height="75px" src="images/kevin.jpeg" width="75px">
+      <h3>Kevin Barkley <i class="fas fa-angle-down"></i></h3>
+    </article>
+    <article class="tophead">
+      <ul class="sbarul">
+        <li style="list-style: none; display: inline">
+          <p class="sbar">Main</p>
+        </li>
+        <li class="lihover" role="button"><i class="fas fa-home fa-fw"></i> HOME</li>
+        <li class="lihover" role="button"><i class="fas fa-briefcase fa-fw"></i> JOBS</li>
+        <li class="lihover" role="button"><i class="fas fa-file-alt fa-fw"></i> RESUMES</li>
+        <li class="lihover" role="button"><i class="fas fa-clipboard-list fa-fw"></i> TASKS</li>
+        <li class="lihover" role="button"><i class="fas fa-calendar-alt fa-fw"></i> CALENDER</li>
+      </ul>
+    </article>
+    <article class="midhead">
+      <ul class="sbar">
+        <li style="list-style: none; display: inline">
+          <p class="sbar">Admin</p>
+        </li>
+        <li class="lihover" role="button"><i class="fas fa-user-friends fa-fw"></i> USERS</li>
+        <li class="lihover" role="button"><i class="fas fa-map-marker-alt fa-fw"></i> LOCATIONS</li>
+        <li class="lihover" role="button"><i class="fas fa-sitemap fa-fw"></i> WORKFLOWS</li>
+        <li class="lihover" role="button"><i class="fas fa-newspaper fa-fw"></i> JOB BOARDS</li>
+        <li class="lihover" role="button"><i class="fas fa-vector-square fa-fw"></i> SOCIAL</li>
+      </ul>
+    </article>
+    <article class="bottomhead">
+      <ul>
+        <li style="list-style: none; display: inline">
+          <p class="sbar">Categories</p>
+        </li>
+        <li class="checks" role="button"><i class="fas fa-check-square fa-fw"></i> Administrative</li>
+        <li class="checks" role="button"><i class="fas fa-square dsquare fa-fw"></i> Design</li>
+        <li class="checks" role="button"><i class="fas fa-square esquare fa-fw"></i> Executive</li>
+        <li class="checks" role="button"><i class="fas fa-square hsquare fa-fw"></i> Human Resources</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main">
+    <section class="navbar" role="navigation bar">
+      <button class="btn sidebar-hamburger topbtnhover" role="hide sidebar-hamburger"><i class="fas fa-bars"></i></button> <input class="top-search" name="top-search" placeholder="Search for a job, task or resume" type="search"> <button class="btn left-top-btn topbtnhover" role="add-user"><i class="fas fa-user-plus"></i></button> <button class="btn mid-top-btn topbtnhover" role="calander"><i class="fas fa-calendar-plus"></i></button> <button class="btn right-top-btn topbtnhover" role="menu"><i class="fas fa-th"></i></button>
+    </section>
+    <section class="below-nav">
+      <article class="main-info" role="main-info">
+        <div class="jobtitle-location">
+          <h1 class="main-header">Customer Service Representative</h1>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Denver, CO</p><i class="fas fa-circle littledot"></i> <a class="header-link" href="">Preview this post</a>
+        </div>
       </article>
-      <article>
-        <h5>Main</h5>
-        <button class="btn"><i class="">HOME</i></button>
-        <button class="btn"><i class="">JOBS</i></button>
-        <button class="btn"><i class="">RESUMES</i></button>
-        <button class="btn"><i class="">TASKS</i></button>
-        <button class="btn"><i class="">CALENDER</i></button>
+      <article class="main-buttons">
+        <button class="btn openmid midbtnhover" role="open"><i class="fas fa-circle"></i> <span class="btntext">OPEN</span></button> <button class="btn midbtn midbtnhover" role="bookmark"><i class="fas fa-bookmark"></i></button> <button class="btn midbtn midbtnhover" role="edit"><i class="fas fa-pencil-alt"></i></button> <button class="btn midbtn midbtnhover" role="delete"><i class="fas fa-trash-alt"></i></button>
       </article>
-      <article>
-        <h5>Admin</h5>
-        <button class="btn"><i class="">USERS</i></button>
-        <button class="btn"><i class="">LOCATION</i></button>
-        <button class="btn"><i class="">WORKFLOWS</i></button>
-        <button class="btn"><i class="">JOB BOARDS</i></button>
-        <button class="btn"><i class="">SOCIAL</i></button>
-      </article>
-      <article>
-        <h5>Catagories</h5>
-        <button class="btn"><i class="">Aministrative</i></button>
-        <button class="btn"><i class="">Design</i></button>
-        <button class="btn"><i class=""></i>Executive</button>
-        <button class="btn"><i class="">Human</i></button>
+      <article class="top-nav">
+        <ul class="topnavul">
+          <li class="topnavulhover1" role="button">SUMMARY</li>
+          <li class="topnavulhover" role="button">APPLICANTS</li>
+          <li class="topnavulhover" role="button">JOB BOARD</li>
+          <li class="topnavulhover" role="button">INTERVEWS</li>
+          <li class="topnavulhover" role="button">ACTIVITY</li>
+          <li class="topnavulhover" role="button">BROADCAST</li>
+          <li class="topnavulhover" role="button">NOTIFICATIONS</li>
+        </ul>
       </article>
     </section>
-    <section class="right">
-      <section class="nav">
-        <article class="dropdown">
-          <button class="btn"><i class=""></i></button>
+    <section class="charts-graphs">
+      <article class="chart">
+        <div class="flex-wrapper">
+          <div class="svg-wrapper">
+            <div class="single-chart" role="diagram">
+              <svg class="circular-chart orange" viewbox="0 0 36 36">
+              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+              <path class="circle" d="M18 33.915 a 15.9155 15.9155 0 0 1 0 -31.831 a 15.9155 15.9155 0 0 1 0 31.831" stroke-dasharray="80, 100"></path>
+              <text class="percentage" x="18" y="19">
+                3,154
+              </text>
+              <text class="circlelowertext" x="18" y="23">
+                APPLICANTS
+              </text></svg>
+            </div>
+            <div class="single-chart" role="diagram">
+              <svg class="circular-chart green" viewbox="0 0 36 36">
+              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+              <path class="circle" d="M18 33.915 a 15.9155 15.9155 0 0 1 0 -31.831 a 15.9155 15.9155 0 0 1 0 31.831" stroke-dasharray="40, 100"></path>
+              <text class="percentage" x="18" y="19">
+                1,546
+              </text>
+              <text class="circlelowertext" x="18" y="23">
+                INTERVIEWS
+              </text></svg>
+            </div>
+            <div class="single-chart" role="diagram">
+              <svg class="circular-chart blue" viewbox="0 0 36 36">
+              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+              <path class="circle" d="M18 33.915 a 15.9155 15.9155 0 0 1 0 -31.831 a 15.9155 15.9155 0 0 1 0 31.831" stroke-dasharray="20, 100"></path>
+              <text class="percentage" x="18" y="19">
+                912
+              </text>
+              <text class="circlelowertext" x="18" y="23">
+                FORWARDS
+              </text></svg>
+            </div>
+          </div>
+          <div class="btn-below-svg">
+            <button class="btn chartbtn chartbtnhover">TOTALS - Out of 5,231 views</button>
+          </div>
+        </div>
+        <div>
+          <div class="bargraph">
+            <img class="barchart" role="diagram" src="images/chart.png">
+            <div class="btn-below-graph">
+              <button class="btn graphbtn chartbtnhover">APPLICANTS/DAY</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="pagebreak">
+      <section class="bottominfo">
+        <article class="table-area">
+          <table class="table" role="table">
+            <tr>
+              <th width="20%">Job Discription</th>
+              <th><button class="btn headbtnhover"><i class="fas fa-pencil-alt editbtn">EDIT</i></button></th>
+            </tr>
+            <tr>
+              <td width="30%">POSITION TITLE</td>
+              <td width="70%">Customer Service Representative</td>
+            </tr>
+            <tr>
+              <td width="30%">LOCATION</td>
+              <td width="70%">Denver, CO</td>
+            </tr>
+            <tr>
+              <td width="30%">EMPLOYMENT TYPE</td>
+              <td width="70%">Full-time</td>
+            </tr>
+            <tr>
+              <td width="30%">EXPERIENCE</td>
+              <td width="70%">Mid-level</td>
+            </tr>
+            <tr>
+              <td width="30%">STATUS</td>
+              <td width="70%">Open</td>
+            </tr>
+            <tr>
+              <td class="discription" width="30%">DESCRIPTION</td>
+              <td width="70%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</td>
+            </tr>
+            <tr>
+              <td width="30%">HIRING LEAD</td>
+              <td class="hiring-lead" width="70%"><img alt="hiring lead headshot" class="doglead1" height="35px" src="images/dodlead.jpg" width="35px"> Tom Tizzy</td>
+            </tr>
+            <tr>
+              <td width="30%">APPROVED SALARY</td>
+              <td width="70%">$100,000</td>
+            </tr>
+          </table>
         </article>
-        <article class="search">
-          <input type="search" name="searchtop" placeholder="Search for a job task or resume" aria-label="Search through site content">
-          <button class="searchbtn">Search</button>
-        </article>
-        <article class="profile">
-          <button class="btn"><i class=""></i></button>
-        </article>
-        <article class="calender">
-          <<button class="btn"><i class=""></i></button>
-        </article>
-        <article class="menu">
-          <button class="btn"><i class=""></i></button>
+        <article class="social-area">
+          <div class="social btns">
+            <button aria-label="Post to Facebook" class="btn fbook socialbtnhover"><i class="fab fa-facebook-f fbookicon"></i>Post to Facebook</button> <button aria-label="Tweet this Job" class="btn twitter socialbtnhover"><i class="fab fa-twitter twittericon"></i>Tweet this Job</button> <button class="btn linkedin socialbtnhover"><i aria-label="Post to Linkedin" class="fab fa-linkedin linkedinicon"></i>Post to Linkedin</button>
+          </div>
+          <div class="link1">
+            <h2><i class="fas fa-globe-americas"></i> Link to this job</h2>
+            <p class="link-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="link-inputs">
+              <input class="joblink" name="copy" placeholder="hhtp:://www.thisisawebsiteyoucantgoto.com" type="text"><button class="copy" role="copy">Copy</button>
+            </div>
+          </div>
+          <div class="link2">
+            <h2><i class="fas fa-share-square"></i>Use the Button Widget</h2>
+            <p class="link-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="link-inputs">
+              <input class="joblink" name="copy" placeholder="&lt;script type text javascript" type="text"><button class="copy" role="copy">Copy</button>
+            </div>
+          </div>
+          <div class="link3">
+            <h2><i class="fas fa-paper-plane"></i>Upload Resume by Email</h2>
+            <p class="link-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p><input class="enter-email" name="email" placeholder="tomtizzy@gmail.com" type="email">
+          </div>
         </article>
       </section>
-      <section class="header">
-        <article class="info">
-          <h1>Job Title</h1>
-          <p>location</p>
-          <a href="">Link</a>
-        </article>
-        <article class="editbtns">
-          <button class="btn"><i class=""></i></button>
-          <button class="btn"><i class=""></i></button>
-          <button class="btn"><i class=""></i></button>
-          <button class="btn"><i class=""></i></button>
-        </article>
-        <article class="bottomnav">
-          <h4>SUMMARY</h4>
-          <h4>APPLICANTS</h4>
-          <h4>JOB BOARD</h4>
-          <h4>INTERVIEWS</h4>
-          <h4>ACTIVITY</h4>
-          <h4>BROADCAST</h4>
-          <h4>NOTIFICATIONS</h4>
-        </article>
-      </section>
-      <section class="content">
-          <div class="single-chart">
-            <svg viewbox="0 0 36 36" class="circular-chart orange">
-              <path class="circle-bg"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-                stroke-dasharray="30, 100"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="percentage">30%</text>
-            </svg>
-          </div>
-          <div class="single-chart">
-            <svg viewbox="0 0 36 36" class="circular-chart green">
-              <path class="circle-bg"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-                stroke-dasharray="60, 100"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="percentage">60%</text>
-            </svg>
-          </div>
-          <div class="single-chart">
-            <svg viewbox="0 0 36 36" class="circular-chart blue">
-              <path class="circle-bg"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-                stroke-dasharray="90, 100"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="percentage">90%</text>
-            </svg>
-          </div>
-        </section>
-        <section>
-          place bar graph here
-        </section>
-      </section> 
-      <section class="lower-content">
-        <article>
-          <div>
-            <h4>POSITION TITLE</h4>
-            <p>Customer Service Rep</p>
-          </div>
-          <div>
-            <h4>LOCATION</h4>
-            <p>Denver, CO</p>
-          </div>
-          <div>
-            <h4>EMPLOYMENT TYPE</h4>
-            <p>Full Time</p>
-          </div>
-          <div>
-            <h4>EXPERIENCE</h4>
-            <p>Mid-Level</p>
-          </div>
-          <div>
-            <h4>STATUS</h4>
-            <p>Open</p>
-          </div>
-          <div>
-            <h4>DESCRIPTION</h4>
-            <p> ipsum shit here</p>
-          </div>
-          <div>
-            <h4>HIRING LEAD</h4>
-            <img src="">
-            <p>Ben Hayek</p>
-          </div>
-          <div>
-            <h4>APPROVED SALARY</h4>
-            <p>$100,000</p>
-          </div>
-        </article>
-        <article>
-          <div>
-            <button class="btn"><i class="">Post to facebook</i></button>
-            <button class="btn"><i class="">Tweet this job</i></button>
-            <button class="btn"><i class=""></i>Post to linkedin</button>
-          </div>
-          <div>
-            <img src="">
-            <h2>Link to this job</h2>
-            <p>Ipsum shit here</p>
-            <input type="text" name="">
-            <button>copy</button>
-          </div>
-          <div>
-            <img src="">
-            <h2>Use the button widgert</h2>
-            <p>Ipsum shit here</p>
-            <input type="text" name="">
-            <button>copy</button>
-          </div>
-          <div>
-            <img src="">
-            <h2>Upload resume by email</h2>
-            <p>More ipsum shit</p>
-            <input type="email" name="">
-          </div>
-        </article>
-      </section> 
     </section>
-  </section>  
+  </section>
 </body>
 </html>
